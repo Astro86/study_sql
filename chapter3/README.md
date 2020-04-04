@@ -1,6 +1,6 @@
 # 정렬과 연산
 
-## 정렬하기
+## 정렬하기 - ORDER BY
 
 > 기존 테이블
 
@@ -15,6 +15,8 @@ mysql> SELECT * FROM sample31;
 +------+------+---------------------------+
 3 rows in set (0.00 sec)
 ```
+
+### age를 기준으로 테이블 정렬하기
 
 > 명령어
 
@@ -39,6 +41,8 @@ SELECT* FROM sample31 ORDER BY age;
 
 `오름차순`으로 정렬되었음을 확인할 수 있다.
 
+### address를 기준으로 테이블 정리하기
+
 > 명령어
 
 ```sql
@@ -61,7 +65,7 @@ SELECT* FROM sample31 ORDER BY address;
 
 `사전순`으로 테이블이 정렬되었다.
 
-## 내림 차순으로 정렬하기
+## 내림 차순으로 정렬하기 - DESC
 
 > 명령어
 
@@ -84,7 +88,7 @@ SELECT* FROM sample31 ORDER BY age DESC;
 3 rows in set (0.00 sec)
 ```
 
-## 오름 차순으로 정렬하기
+## 오름 차순으로 정렬하기 - AES
 
 > 명령어
 
@@ -239,7 +243,7 @@ SELECT TOP 3 * FROM sample33;
 SELECT * FROM sample33 WHERE ROWNUM<=3;
 ```
 
-## 오프셋 지정
+## 오프셋 지정 - OFFSET
 
 > 명령어
 
@@ -282,7 +286,7 @@ SELECT*, price*quantity FROM sample34;
 3 rows in set (0.00 sec)
 ```
 
-## 열의 별명
+## 열의 별명 - AS
 
 > 명령어
 
@@ -391,7 +395,7 @@ SELECT*, price*quantity AS amount FROM sample34 ORDER BY amount DESC;
 3 rows in set (0.01 sec)
 ```
 
-## ROUND 함수
+## ROUND 함수 - 반올림
 
 > 기존 테이블
 
@@ -470,7 +474,7 @@ SELECT amount, ROUND(amount, -2) FROM sample341;
 
 ## 문자열 연산
 
-### 문자열 결합
+### 문자열 결합 - CONCAT
 
 ```sql
 SELECT CONCAT(quantity, unit) FROM sample35;
