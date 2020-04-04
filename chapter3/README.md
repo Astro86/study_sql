@@ -170,7 +170,7 @@ SELECT* FROM sample32 ORDER BY a ASC, b DESC;
 5 rows in set (0.00 sec)
 ```
 
-## 결과 행 제한하기
+## 결과 행 제한하기 - LIMIT
 
 > 테이블
 
