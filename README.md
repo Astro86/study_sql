@@ -7,3 +7,4 @@
 - [4장 데이터 추가, 삭제, 갱신](chapter04/README.md)
 - [5장 집계와 서브쿼리](chapter05/README.md)
 - [6장 데이터베이스 객체 작성과 삭제](chapter06/README.md)
+- [7장 복수의 테이블 다루기](chapter07/README.md)
