@@ -114,7 +114,7 @@
 - 상위 n개 레코드 https://programmers.co.kr/learn/courses/30/lessons/59405
 
 ### 집계함수 (SUM, MAX, MIN)
-- 최댓 값 구하기 https://programmers.co.kr/learn/courses/30/parts/17043
+- 최댓 값 구하기 https://programmers.co.kr/learn/courses/30/lessons/59040
 - 최솟 값 구하 https://programmers.co.kr/learn/courses/30/lessons/59038
 - 동물 수 구하기 https://programmers.co.kr/learn/courses/30/lessons/59406
 - 중복 제거하기 https://programmers.co.kr/learn/courses/30/lessons/59408
