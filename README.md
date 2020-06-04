@@ -114,13 +114,13 @@
 - 상위 n개 레코드 https://programmers.co.kr/learn/courses/30/lessons/59405
 
 ### 집계함수 (SUM, MAX, MIN)
-- 최댓 값 구하기 https://programmers.co.kr/learn/courses/30/lessons/59040
+- 최댓 값 구하기 https://programmers.co.kr/learn/courses/30/parts/17043
 - 최솟 값 구하 https://programmers.co.kr/learn/courses/30/lessons/59038
 - 동물 수 구하기 https://programmers.co.kr/learn/courses/30/lessons/59406
 - 중복 제거하기 https://programmers.co.kr/learn/courses/30/lessons/59408
 
 ### 그룹화 (GROUP BY)
-- 고양이와 개는 몇마리 있을까 https://programmers.co.kr/learn/courses/30/lessons/59408
+- 고양이와 개는 몇마리 있을까 https://programmers.co.kr/learn/courses/30/lessons/59040
 - 동명 동물 수 찾기 https://programmers.co.kr/learn/courses/30/lessons/59041
 - 입양 시각 구하기 https://programmers.co.kr/learn/courses/30/lessons/59412
 - 입양 시각 구하기2 https://programmers.co.kr/learn/courses/30/lessons/59413
