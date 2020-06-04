@@ -9,6 +9,20 @@
 - [6장 데이터베이스 객체 작성과 삭제](chapter06/README.md)
 - [7장 복수의 테이블 다루기](chapter07/README.md)
 
+## SELECT
+
+## FROM
+
+## WHERE
+
+## GROUP BY
+
+## HAVING
+
+## ORDER BY
+
+## IFNULL, ISNULL, COALESCE, NVL
+
 ## JOIN
 
 ![](images/join.png)
@@ -17,6 +31,10 @@
 - LEFT JOIN : 두 테이블이 공통적으로 가지고 있는 레코드와 왼쪽 테이블의 모든 레코드를 반환한다.
 - RIGHT JOIN : 두 테이블이 공통적으로 가지고 있는 레코드와 오른쪽 테이블의 모든 레코드를 반환한다.
 - FULL OUTER JOIN : 두 테이블이 공통적으로 가지고 있는 레코드와 왼쪽 오른쪽 테이블의 레코드를 반환한다.
+
+## SQL 내 함수
+
+
 
 ## SQL문 처리순서
 1. FROM
@@ -138,7 +156,7 @@
 
 ### String, Date
 - 루시와 엘라 찾기 https://programmers.co.kr/learn/courses/30/lessons/59046
-- 이름에 el이 들어가는 동물 찾기 https://programmers.co.kr/learn/courses/30/parts/17047
+- 이름에 el이 들어가는 동물 찾기 https://programmers.co.kr/learn/courses/30/lessons/59047
 - 중성화 여부 파악하기 https://programmers.co.kr/learn/courses/30/lessons/59409
 - 오랜기간 보호한 동물(2) https://programmers.co.kr/learn/courses/30/lessons/59411
 - DATETIME에서 DATE로 형 변환 https://programmers.co.kr/learn/courses/30/lessons/59414
