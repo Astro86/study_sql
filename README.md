@@ -32,9 +32,9 @@
 - RIGHT JOIN : 두 테이블이 공통적으로 가지고 있는 레코드와 오른쪽 테이블의 모든 레코드를 반환한다.
 - FULL OUTER JOIN : 두 테이블이 공통적으로 가지고 있는 레코드와 왼쪽 오른쪽 테이블의 레코드를 반환한다.
 
-## SQL 내 함수
+# SQL 내 함수
 
-### 숫자 함수
+## 숫자 함수
 - ABS(n) : n의 절대값을 반환한다.
 - CEIL(n), FLOOR(n) : n보다 같거나 큰 함수를 반환한다.
 - ROUND(n, i) : n을 소수점 i+1번째 자리에서 반올림 한다.
@@ -42,19 +42,19 @@
 - POWER(n1, n2) : n1을 n2로 거듭제곱한다.
 - MOD(n1, n2) : n1을 n2로 나눈 나머지 값
 
-#### ROUND & TRUNC 자릿 값
+### ROUND & TRUNC 자릿 값
 ![](images/round.jpg)
 
 소수쪽으로 가게 되면 양수를 정수쪽으로 가게 되면 음수값을 취하면 된다.
 
 
-### 문자 함수
+## 문자 함수
 - UPPER(char) : char를 대문자로 변환한다.
 - LOWER(char) : char를 소문자로 반환한다.
 - LENGTH(char) : char의 길이를 반환한다.
 
 
-### 날짜 함수
+## 날짜 함수
 - year(DATE), year(DATETIME)
 - hour(TIME), hour(DATETIME)
 - minute(TIME), minute(DATETIME)
@@ -62,7 +62,7 @@
 - DATE_FORMAT(DATE, format)
 
 
-#### DATE_FORMAT
+### DATE_FORMAT
 ```sql
 SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME, '%y-%m-%d') AS '날짜'
 from ANIMAL_INS
