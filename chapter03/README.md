@@ -476,9 +476,27 @@ SELECT amount, ROUND(amount, -2) FROM sample341;
 
 ### 문자열 결합 - CONCAT
 
+> 테이블
+
+```sql
+select * from sample35;
++------+-------+----------+------+
+| no   | price | quantity | unit |
++------+-------+----------+------+
+|    1 |   100 |       10 | 개   |
+|    2 |   230 |       24 | 통   |
+|    3 |  1980 |        1 | 장   |
++------+-------+----------+------+
+3 rows in set (0.00 sec)
+```
+
+> 명령어
+
 ```sql
 SELECT CONCAT(quantity, unit) FROM sample35;
 ```
+
+> 결과
 
 ```sql
 +------------------------+
@@ -507,14 +525,32 @@ SELECT a, CASE WHEN a IS NULL THEN 0 ELSE a END "a(null=0)" FROM sample37;
 |    2 |         2 |
 | NULL |         0 |
 +------+-----------+
-3 rows in set (0.00 sec)
+3 rows in set (0.00 sec)  
 ```
 
 ### COALESCE 함수를 이용한 NULL값 변환
 
+> 테이블
+
 ```sql
-SELECT a, COALESCE(a,0) FROM sample37;
+SELECT * FROM sample37;
++------+
+| a    |
++------+
+|    1 |
+|    2 |
+| NULL |
++------+
+3 rows in set (0.00 sec)
 ```
+
+> 명령어
+
+```sql
+SELECT a,  (a,0) FROM sample37;
+```
+
+> 결과
 
 ```sql
 +------+---------------+
@@ -527,9 +563,21 @@ SELECT a, COALESCE(a,0) FROM sample37;
 3 rows in set (0.00 sec)
 ```
 
+### CASE로 NULL 값을 0으로 반환하기
+
+> 명령어
+
 ```sql
-SELECT a AS "코드", CASE WHEN a=1 THEN '남자' WHEN a=2 THEN '여자' ELSE '미지정' END AS "성별" FROM sample37;
+SELECT a AS "코드", 
+    CASE 
+        WHEN a=1 THEN '남자' 
+        WHEN a=2 THEN '여자' 
+        ELSE '미지정' 
+    END AS "성별" 
+FROM sample37;
 ```
+
+> 결과
 
 ```sql
 +--------+-----------+
