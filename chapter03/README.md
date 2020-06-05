@@ -547,7 +547,7 @@ SELECT * FROM sample37;
 > 명령어
 
 ```sql
-SELECT a,  (a,0) FROM sample37;
+SELECT a, COALESCE(a,0) FROM sample37;
 ```
 
 > 결과
