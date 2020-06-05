@@ -53,6 +53,61 @@
 - LOWER(char) : char를 소문자로 반환한다.
 - LENGTH(char) : char의 길이를 반환한다.
 
+### UPPER
+> 명령어
+
+```sql
+select UPPER('hello');
+```
+
+> 결과
+
+```sql
++----------------+
+| UPPER('hello') |
++----------------+
+| HELLO          |
++----------------+
+1 row in set (0.00 sec)
+```
+
+### LOWER
+> 명령어
+
+```sql
+mysql> select LOWER('HELLO');
+```
+
+> 결과
+
+```sql
++----------------+
+| LOWER('HELLO') |
++----------------+
+| hello          |
++----------------+
+1 row in set (0.00 sec)
+```
+
+### LENGTH
+> 명령어
+
+```sql
+select LENGTH('hello');
+```
+
+> 결과
+
+```sql
++-----------------+
+| LENGTH('hello') |
++-----------------+
+|               5 |
++-----------------+
+1 row in set (0.00 sec)
+```
+
+
 
 ## 날짜 함수
 - year(DATE), year(DATETIME)
@@ -60,6 +115,82 @@
 - minute(TIME), minute(DATETIME)
 - second(TIME), second(DATETIME)
 - DATE_FORMAT(DATE, format)
+
+### year
+
+> 명령어
+
+```sql
+select year('2020-06-05');
+```
+
+> 결과
+
+```sql
++--------------------+
+| year('2020-06-05') |
++--------------------+
+|               2020 |
++--------------------+
+1 row in set (0.00 sec)
+```
+
+### hour
+
+> 명령어
+
+```sql
+select hour('11:42:55');
+```
+
+> 결과
+
+```sql
++------------------+
+| hour('11:42:55') |
++------------------+
+|               11 |
++------------------+
+1 row in set (0.00 sec)
+```
+
+### minute(TIME)
+
+> 명령어
+
+```sql
+select minute('11:42:55');
+```
+
+> 결과
+
+```sql
++--------------------+
+| minute('11:42:55') |
++--------------------+
+|                 42 |
++--------------------+
+1 row in set (0.00 sec)
+```
+
+### second(TIME)
+
+> 명령어
+
+```sql
+select second('11:42:55');
+```
+
+> 결과
+
+```sql
++--------------------+
+| second('11:42:55') |
++--------------------+
+|                 55 |
++--------------------+
+1 row in set (0.00 sec)
+```
 
 
 ### DATE_FORMAT
