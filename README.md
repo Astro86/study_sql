@@ -79,7 +79,7 @@ order by ANIMAL_ID
 ```
 ![](images/date_format_YYmd.png)
 
-년도를 대문자로 데이텨 형싱르 표현하게 되면 구체적인 년도를 표시한다.
+년도를 대문자로 데이텨 형식을 표현하게 되면 구체적인 년도를 표시한다.
 
 ```sql
 SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME, '%y-%M-%d') AS '날짜'
