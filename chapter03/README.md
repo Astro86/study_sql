@@ -514,7 +514,12 @@ SELECT CONCAT(quantity, unit) FROM sample35;
 ### CASE로 NULL 값을 0으로 변환하기
 
 ```sql
-SELECT a, CASE WHEN a IS NULL THEN 0 ELSE a END "a(null=0)" FROM sample37;
+SELECT a, 
+    CASE 
+        WHEN a IS NULL THEN 0 
+        ELSE a 
+    END "a(null=0)" 
+FROM sample37;
 ```
 
 ```sql
