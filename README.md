@@ -116,7 +116,7 @@ select LENGTH('hello');
 - second(TIME), second(DATETIME)
 - DATE_FORMAT(DATE, format)
 
-### year
+### year(DATE)
 
 > 명령어
 
@@ -135,7 +135,7 @@ select year('2020-06-05');
 1 row in set (0.00 sec)
 ```
 
-### hour
+### hour(TIME)
 
 > 명령어
 
